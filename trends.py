@@ -57,7 +57,7 @@ def main():
     # the prediction function defined above is called to make the prediction
     # and store it in the variable result
     if st.button("Search"):
-        result = google_trends(term)
+        result = google_trends()
     st.success('The output is {}'.format(result))
 
 
