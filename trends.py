@@ -41,8 +41,8 @@ def main():
     # here we define some of the front end elements of the web page like
     # the font and background color, the padding and the text to be displayed
     html_temp = """ 
-        <div style ="background-color:yellow;padding:13px"> 
-        <h1 style ="color:black;text-align:center;">Streamlit Iris Flower Classifier ML App </h1> 
+        <div style ="background-color:black;padding:13px"> 
+        <h1 style ="color:white;text-align:center;">Top 10 Countries </h1> 
         </div> 
         """
 
