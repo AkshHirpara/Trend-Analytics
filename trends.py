@@ -29,7 +29,7 @@ class Trends:
 #     remove_words = [word for word in related_queries['query'] if word in stopwords]
 #     related_queries = related_queries[~related_queries['query'].isin(remove_words)]
         related_queries = pd.DataFrame.to_dict(related_queries)
-        return {"top10": st.map(top10), "related_queries": related_queries}
+        return {"top10": top10, "related_queries": related_queries}
 
 
 def main():
@@ -57,7 +57,8 @@ def main():
     # the prediction function defined above is called to make the prediction
     # and store it in the variable result
     if st.button("Search"):
-        result = Trends.google_trends(term= term_name)
+        a = Trends.google_trends(term= term_name)
+        result = st.map(a)
     st.success('The output is {}'.format(result))
 
 
