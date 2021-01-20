@@ -2,7 +2,6 @@ import tweepy
 import pandas as pd
 from pytrends.request import TrendReq
 from wordcloud import WordCloud, STOPWORDS
-from lib import stoplists
 from os import environ
 
 
