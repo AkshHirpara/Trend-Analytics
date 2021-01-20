@@ -3,7 +3,7 @@ import pandas as pd
 from pytrends.request import TrendReq
 from wordcloud import WordCloud, STOPWORDS
 from os import environ
-
+import streamlit as st
 
 class Trends:
     """ The Trends tab will be used to get details for Search Trends and Social Media Trends Tab. """
