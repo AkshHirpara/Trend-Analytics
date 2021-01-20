@@ -6,7 +6,7 @@ from os import environ
 import streamlit as st
 
 
-# class Trends:
+class Trends:
 #     """ The Trends tab will be used to get details for Search Trends and Social Media Trends Tab. """
 
 def google_trends(term: str) -> dict:
@@ -57,7 +57,7 @@ def main():
     # the prediction function defined above is called to make the prediction
     # and store it in the variable result
     if st.button("Search"):
-        result = google_trends(term)
+        result = Trends.google_trends(term= term_name)
     st.success('The output is {}'.format(result))
 
 
