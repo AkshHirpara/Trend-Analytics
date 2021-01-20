@@ -50,7 +50,7 @@ def main():
 
     # the following lines create text boxes in which the user can enter
     # the data required to make the prediction
-    term_name = st.text_input("Sepal Length", "Type Here")
+    term_name = st.text_input("Term", "Type Here")
     result = ""
 
     # the below line ensures that when the button called 'Predict' is clicked,
