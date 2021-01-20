@@ -10,14 +10,14 @@ class Trends:
 #     """ The Trends tab will be used to get details for Search Trends and Social Media Trends Tab. """
 
     def google_trends(term: str) -> dict:
-    """Google Trends Function to know Keyword Trends in Google
+        """Google Trends Function to know Keyword Trends in Google
 
-    Args:
-        term to be searched.
+        Args:
+            term to be searched.
 
-    Returns: Dictionary of Top10 Countries where the searched keyword is famous and Similar Topics relating to
-    the Searched Keyword
-    """
+        Returns: Dictionary of Top10 Countries where the searched keyword is famous and Similar Topics relating to
+        the Searched Keyword
+        """
         pytrend = TrendReq()
         pytrend.build_payload(kw_list=[term])
         region_wise = pytrend.interest_by_region()
