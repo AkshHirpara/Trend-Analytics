@@ -30,7 +30,7 @@ class Trends:
 #     stopwords = stoplists.gtrends_stop_words
 #     remove_words = [word for word in related_queries['query'] if word in stopwords]
 #     related_queries = related_queries[~related_queries['query'].isin(remove_words)]
-#         related_queries = pd.DataFrame.to_dict(related_queries)
+        related_queries = pd.DataFrame.to_dict(related_queries)
         return top10,related_queries
 
 
