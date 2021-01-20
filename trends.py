@@ -9,7 +9,7 @@ import streamlit as st
 # class Trends:
 #     """ The Trends tab will be used to get details for Search Trends and Social Media Trends Tab. """
 
-def google_trends(self, term: str) -> dict:
+def google_trends(term: str) -> dict:
     """Google Trends Function to know Keyword Trends in Google
 
     Args:
