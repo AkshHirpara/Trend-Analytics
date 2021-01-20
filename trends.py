@@ -29,7 +29,7 @@ class Trends:
 #     remove_words = [word for word in related_queries['query'] if word in stopwords]
 #     related_queries = related_queries[~related_queries['query'].isin(remove_words)]
         related_queries = pd.DataFrame.to_dict(related_queries)
-        return {"top10": top10, "related_queries": related_queries}
+        return {"top10": st.map(top10), "related_queries": related_queries}
 
 
 def main():
