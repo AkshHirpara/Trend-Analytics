@@ -23,14 +23,14 @@ class Trends:
         region_wise = pytrend.interest_by_region()
         top10 = region_wise.sort_values(by=term, ascending=False).head(10)
 #         top10 = pd.DataFrame.to_dict(top10)
-        top10 = st.bar_chart(top10)
+        top10 = st.map(top10)
         related_queries = pytrend.related_queries()
         related_queries = pd.DataFrame(related_queries[term]['rising'].sort_values(by="value", ascending=False))
         related_queries = st.bar_chart(related_queries)
 #     stopwords = stoplists.gtrends_stop_words
 #     remove_words = [word for word in related_queries['query'] if word in stopwords]
 #     related_queries = related_queries[~related_queries['query'].isin(remove_words)]
-        related_queries = pd.DataFrame.to_dict(related_queries)
+#         related_queries = pd.DataFrame.to_dict(related_queries)
         return {top10,related_queries}
 
 
