@@ -58,7 +58,7 @@ def main():
     # and store it in the variable result
     if st.button("Search"):
         a = Trends.google_trends(term= term_name)
-        result = st.map(a)
+        result = st.bar_chart(a)
     st.success('The output is {}'.format(result))
 
 
