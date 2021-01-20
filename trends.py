@@ -26,7 +26,7 @@ class Trends:
         top10 = st.bar_chart(top10)
         related_queries = pytrend.related_queries()
         related_queries = pd.DataFrame(related_queries[term]['rising'].sort_values(by="value", ascending=False))
-        related_queries = st.bar_chart(related_queries)
+#         related_queries = st.bar_chart(related_queries)
 #     stopwords = stoplists.gtrends_stop_words
 #     remove_words = [word for word in related_queries['query'] if word in stopwords]
 #     related_queries = related_queries[~related_queries['query'].isin(remove_words)]
